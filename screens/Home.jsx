@@ -7,7 +7,7 @@ const Home = () => {
   const { height } = useWindowDimensions();
 
   return (
-    <Box height={height}>
+    <Box height={height} bgColor='#0A192F'>
       <Header />
     </Box>
   );
