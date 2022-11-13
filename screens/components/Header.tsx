@@ -8,6 +8,7 @@ import {
 } from "native-base";
 import React from "react";
 import HeaderContent from "./HeaderContent";
+import { Feather } from "@expo/vector-icons";
 
 const Header = () => {
   const isLargeScreen = useBreakpointValue({ base: false, md: true });
@@ -25,7 +26,11 @@ const Header = () => {
           Y<Text color={"#B4BFDE"}>okesh</Text>
         </Text>
       </Box>
-      <HeaderContent/>
+      {isLargeScreen ? (
+        <HeaderContent />
+      ) : (
+        <Icon as={Feather} name={"menu"} size={8} color="#63FBD7" />
+      )}
     </HStack>
   );
 };
