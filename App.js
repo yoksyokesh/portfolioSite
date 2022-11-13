@@ -1,11 +1,12 @@
 import { Center, NativeBaseProvider, Text } from "native-base";
+import { useWindowDimensions } from "react-native";
+import { Home } from "./screens";
 
 export default function App() {
+  const { height } = useWindowDimensions();
   return (
     <NativeBaseProvider>
-      <Center bgColor="#000000">
-        <Text color={"#ffffff"}>Test text</Text>
-      </Center>
+      <Home/>
     </NativeBaseProvider>
   );
 }
