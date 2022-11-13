@@ -7,6 +7,7 @@ import {
   Box,
 } from "native-base";
 import React from "react";
+import HeaderContent from "./HeaderContent";
 
 const Header = () => {
   const isLargeScreen = useBreakpointValue({ base: false, md: true });
@@ -24,19 +25,7 @@ const Header = () => {
           Y<Text color={"#B4BFDE"}>okesh</Text>
         </Text>
       </Box>
-      <HStack space={{ base: 2, md: 3, lg: 4 }} alignItems="center">
-        <Text color={"#B4BFDE"}>About</Text>
-        <Text color={"#B4BFDE"}>Projects</Text>
-        <Text color={"#B4BFDE"}>Contact me</Text>
-        <Button
-          _text={{ color: "#63FBD7" }}
-          bgColor="#0A192F"
-          borderColor={"#63FBD7"}
-          borderWidth={1.5}
-        >
-          Resume
-        </Button>
-      </HStack>
+      <HeaderContent/>
     </HStack>
   );
 };
