@@ -1,13 +1,12 @@
 import { Center, NativeBaseProvider, Text } from "native-base";
 import { useWindowDimensions } from "react-native";
 import { Home } from "./screens";
-import isFontLoaded from "./theme/isFontLoaded";
-import Theme from "./theme";
+import { isFontLoaded, Theme } from "./theme";
 
 export default function App() {
   const { height } = useWindowDimensions();
 
-  if (!isFontLoaded()) return <></>;
+  if (!isFontLoaded()) return null;
 
   return (
     <NativeBaseProvider theme={Theme()}>

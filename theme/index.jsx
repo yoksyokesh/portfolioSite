@@ -40,4 +40,5 @@ const Theme = () => {
   });
 };
 
-export default Theme;
+export { Theme };
+export { default as isFontLoaded } from "./isFontLoaded";
