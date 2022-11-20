@@ -12,7 +12,7 @@ export default function App() {
   if (!fontLoad) return <></>;
 
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={Theme()}>
       <Text fontFamily={"ProximaNova-Regular"}>checking...</Text>
       {/* <Home /> */}
     </NativeBaseProvider>
