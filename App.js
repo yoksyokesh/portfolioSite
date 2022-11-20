@@ -6,9 +6,8 @@ import Theme from "./theme";
 
 export default function App() {
   const { height } = useWindowDimensions();
-  const fontLoad = isFontLoaded();
 
-  if (!fontLoad) return <></>;
+  if (!isFontLoaded()) return <></>;
 
   return (
     <NativeBaseProvider theme={Theme()}>
