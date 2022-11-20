@@ -34,6 +34,9 @@ const Theme = () => {
         },
       },
     },
+    fonts: {
+      ProximaNova: "Proxima Nova",
+    },
   });
 };
 

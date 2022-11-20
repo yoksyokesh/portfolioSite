@@ -3,7 +3,6 @@ import { useWindowDimensions } from "react-native";
 import { Home } from "./screens";
 import isFontLoaded from "./theme/isFontLoaded";
 import Theme from "./theme";
-import { useFonts } from "expo-font";
 
 export default function App() {
   const { height } = useWindowDimensions();
@@ -13,7 +12,7 @@ export default function App() {
 
   return (
     <NativeBaseProvider theme={Theme()}>
-      <Text fontFamily={"ProximaNova-Regular"}>checking...</Text>
+      <Text fontFamily={"ProximaNova"}>checking...</Text>
       {/* <Home /> */}
     </NativeBaseProvider>
   );
