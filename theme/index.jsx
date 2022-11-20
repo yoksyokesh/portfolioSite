@@ -28,7 +28,7 @@ const Theme = extendTheme({
             italic: 'ProximaNova-Regular',
           },
           700: {
-            normal: 'ProximaNova-Regular',
+            normal: 'ProximaNova-Bold',
             italic: 'ProximaNova-Regular',
           },
         },
