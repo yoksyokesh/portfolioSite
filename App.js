@@ -10,8 +10,7 @@ export default function App() {
 
   return (
     <NativeBaseProvider theme={Theme()}>
-      <Text fontFamily={"ProximaNova"}>checking...</Text>
-      {/* <Home /> */}
+      <Home />
     </NativeBaseProvider>
   );
 }
