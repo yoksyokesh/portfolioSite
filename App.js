@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Center, NativeBaseProvider, Text } from "native-base";
+import { useWindowDimensions } from "react-native";
+import { Home } from "./screens";
+import { isFontLoaded, Theme } from "./theme";
 
 export default function App() {
+  const { height } = useWindowDimensions();
+
+  if (!isFontLoaded()) return null;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider theme={Theme()}>
+      <Home />
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
