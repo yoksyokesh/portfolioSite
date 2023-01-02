@@ -2,40 +2,50 @@ import { extendTheme } from "native-base";
 
 const Theme = () => {
   return extendTheme({
+    breakpoints: {
+      base: 0,
+      sm: 360,
+      md: 768,
+      lg: 1280,
+      xl: 1680,
+      "2xl": 2560,
+    },
     fontConfig: {
-      "Proxima Nova": {
+      "Roboto": {
         100: {
-          normal: "ProximaNova-Thin",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Thin",
+          italic: "Roboto-Italic",
         },
         200: {
-          normal: "ProximaNova-Thin",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Thin",
+          italic: "Roboto-Italic",
         },
         300: {
-          normal: "ProximaNova-Thin",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Thin",
+          italic: "Roboto-Italic",
         },
         400: {
-          normal: "ProximaNova-Regular",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Regular",
+          italic: "Roboto-Italic",
         },
         500: {
-          normal: "ProximaNova-Medium",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Medium",
+          italic: "Roboto-Italic",
         },
         600: {
-          normal: "ProximaNova-Semibold",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Medium",
+          italic: "Roboto-Italic",
         },
         700: {
-          normal: "ProximaNova-Bold",
-          italic: "ProximaNova-Italic",
+          normal: "Roboto-Bold",
+          italic: "Roboto-Italic",
         },
       },
     },
     fonts: {
-      ProximaNova: "Proxima Nova",
+      // heading: "Proxima Nova",
+      body: "Roboto",
+      // mono: "Proxima Nova",
     },
   });
 };

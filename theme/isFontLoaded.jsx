@@ -3,12 +3,11 @@ import { useFonts } from "expo-font";
 
 const isFontLoaded = () => {
   const [fontsLoaded] = useFonts({
-    "ProximaNova-Regular": require("../assets/fonts/ProximaNova-Regular.otf"),
-    "ProximaNova-Bold": require("../assets/fonts/ProximaNova-Bold.otf"),
-    "ProximaNova-Semibold": require("../assets/fonts/ProximaNova-Semibold.otf"),
-    "ProximaNova-Medium": require("../assets/fonts/ProximaNova-Medium.ttf"),
-    "ProximaNova-Italic": require("../assets/fonts/ProximaNova-Italic.otf"),
-    "ProximaNova-Thin": require("../assets/fonts/ProximaNova-Thin.otf"),
+    "Roboto-Regular": require("../assets/fonts/Roboto-Regular.ttf"),
+    "Roboto-Bold": require("../assets/fonts/Roboto-Bold.ttf"),
+    "Roboto-Medium": require("../assets/fonts/Roboto-Medium.ttf"),
+    "Roboto-Italic": require("../assets/fonts/Roboto-Italic.ttf"),
+    "Roboto-Thin": require("../assets/fonts/Roboto-Thin.ttf"),
   });
   return fontsLoaded;
 };

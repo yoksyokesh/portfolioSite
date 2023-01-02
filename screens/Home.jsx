@@ -1,27 +1,51 @@
 import react from "react";
-import { Box, VStack, Text } from "native-base";
-import { useWindowDimensions } from "react-native";
-import { Header } from "./components";
+import { VStack, Text } from "native-base";
+import { HomeWrapper } from "./components";
+import { Linking } from "react-native";
 
 const Home = () => {
-  const { height } = useWindowDimensions();
-
   return (
-    <Box height={height} bgColor="#0A192F" p={{ base: 5 }}>
-      <VStack space={2}>
-        <Header />
-        <VStack alignSelf={"center"} space={{ base: 2, md: 3, lg: 4 }}>
-          <Text color={"#63FBD7"}>Hi, my name is</Text>
-          <Text color={"#CCD6F6"}>Yokesh.</Text>
-          <Text color={"#8892B0"}>I build things for web, android, iOS.</Text>
-          <Text color={"#65708C"} fontFamily="ProximaNova" fontWeight={700}>
-            I’m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I’m focused
-            on building accessible, human-centered products.
+    <HomeWrapper>
+      <VStack
+        flex={1}
+        alignSelf={"center"}
+        space={{ base: 6, lg: 8 }}
+        px={{ md: 6, lg: 24 }}
+        justifyContent="center"
+      >
+        <Text color={"#63FBD7"} fontSize={16}>
+          Hello, I am
+        </Text>
+        <Text
+          color={"#CCD6F6"}
+          fontSize={{ base: 40, md: 64, lg: 80 }}
+          fontWeight={"bold"}
+          lineHeight={{ sm: 40, md: 64, lg: 72 }}
+        >
+          Yokesh.
+        </Text>
+        <Text
+          color={"#8892B0"}
+          fontWeight={"semibold"}
+          fontSize={{ base: 40, md: 64, lg: 80 }}
+          lineHeight={{ sm: 40, md: 64, lg: 72 }}
+        >
+          I build cross-platform applications.
+        </Text>
+        <Text color={"#8892B0"} fontSize={{ base: 18, lg: 20 }}>
+          I’m a software engineer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I’m focused on
+          building accessible, human-centered products at{" "}
+          <Text
+            color={"#63FBD7"}
+            fontSize={{ base: 18, lg: 20 }}
+            onPress={() => Linking.openURL("https://www.sigfyn.com/")}
+          >
+            Sigfyn.
           </Text>
-        </VStack>
+        </Text>
       </VStack>
-    </Box>
+    </HomeWrapper>
   );
 };
 
