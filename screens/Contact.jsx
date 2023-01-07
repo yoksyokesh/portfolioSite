@@ -45,7 +45,7 @@ const Contact = () => {
                 );
               }}
             >
-              Mail
+              /yoksyokesh@gmail.com
             </Link>
           </HStack>
           <HStack alignItems={"center"} space={2}>
@@ -63,7 +63,7 @@ const Contact = () => {
                 Linking.openURL("https://www.linkedin.com/in/yoksyokesh/");
               }}
             >
-              LinkedIn
+              /yoksyokesh
             </Link>
           </HStack>
           <HStack alignItems={"center"} space={2}>
@@ -81,7 +81,7 @@ const Contact = () => {
                 Linking.openURL("https://github.com/yoksyokesh");
               }}
             >
-              GitHub
+              /yoksyokesh
             </Link>
           </HStack>
         </VStack>
