@@ -39,9 +39,9 @@ const Home = () => {
           <Text
             color={"#63FBD7"}
             fontSize={{ base: 18, lg: 20 }}
-            onPress={() => Linking.openURL("https://www.sigfyn.com/")}
+            onPress={() => Linking.openURL("https://www.pluralsight.com/")}
           >
-            Sigfyn.
+            Pluralsight.
           </Text>
         </Text>
       </VStack>
