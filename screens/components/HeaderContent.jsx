@@ -42,7 +42,7 @@ const HeaderContent = (props) => {
         height={{ base: 8, md: 10 }}
         onPress={() => {
           Linking.openURL(
-            "https://drive.google.com/uc?export=download&id=1h1Y_54buShDGkn_EBklhayP0WHDpGP6G"
+            "https://drive.google.com/file/d/1eq9Jdew0m1GZ3gdWvi0NnEJGrmaKt1bz/view?usp=sharing"
           );
         }}
       >
