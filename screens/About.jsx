@@ -37,7 +37,8 @@ const About = () => {
           to creation of some desktop applications using Tkinter GUI toolkit.
           {`\n\n`}Fast-forward to today, I'm currently working as
           <Text color={"#63FBD7"}>{` Software Development Engineer `}</Text>
-          at Pluralsight, an EdTech company focussed on building a platform to help people upskill themselves. My main focus these
+          at Sigfyn, a FinTech startup focussed on building B2C product which
+          helps people in solving their investment needs. My main focus these
           days is building accessible, inclusive products and digital
           experiences for
           <Text color={"#63FBD7"}>{` web, android & iOS.\n\n`}</Text>I also have
